@@ -10,6 +10,7 @@ public class num11720 {
 		int count = scan.nextInt();
 		int input = scan.nextInt();
 		
+		
 		int sum = 0;
 		for(int i=1; i<=count; i++) {
 			
