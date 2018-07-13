@@ -1,3 +1,4 @@
+package InputOutput;
 import java.util.Scanner;
 
 public class num1001 {
