@@ -9,9 +9,8 @@ public class num10827 {
 		int input = scan.nextInt();
 		int result =1;
 		for(int i=input; i>0; i--) {
-			result = result * i;
+			result *= i;
 		}
 		System.out.println(result);
 	}
-
 }
