@@ -1,0 +1,53 @@
+package stack;
+
+import java.io.*;
+import java.util.*;
+
+public class num10828 {
+
+	public static void main(String[] args) throws Exception {
+		BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+		Stack<String> stack = new Stack<>(); 
+		
+		int n = Integer.parseInt(bf.readLine());
+		
+		for(int i=0; i<n; i++) {
+			String input = bf.readLine();
+			String[] order = input.split(" ");
+			String top ="";
+			switch(order[0]) {
+			case "push":
+				stack.push(order[1]);
+				break;
+				
+			case "top":
+				if(stack.size()!=0) {
+					top = stack.get(stack.size() - 1);
+					System.out.println(top);
+				}else System.out.println(-1);
+				break;
+				
+			case "pop":
+				if(stack.size()!=0) {
+					top = stack.get(stack.size() - 1);
+					stack.pop();
+					System.out.println(top);
+				}else System.out.println(-1);
+				
+				break;
+				
+			case "size":
+				System.out.println(stack.size());
+				break;
+				
+			case "empty":
+				if(stack.empty()) System.out.println(1);
+				else System.out.println(0);
+				break;
+			}
+
+		}
+
+	}
+
+}
